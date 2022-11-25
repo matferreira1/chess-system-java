@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author ferre
+ *
+ */
+module chesstest {
+}
