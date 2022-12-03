@@ -8,7 +8,7 @@ public class ChessPosition {
 	private int row;
 	public ChessPosition(char column, int row) {
 		if (column < 'a' || column >'h' || row < 1 || row > 8) {
-			throw new ChessException("Posicao inválida");
+			throw new ChessException("Posicao invalida");
 		}
 		this.column = column;
 		this.row = row;
