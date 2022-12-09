@@ -45,7 +45,10 @@ public class ChessMatch {
 	
 	private void validateSourcePosition(Position position) {
 		if (!board.thereIsAPiece(position)) {
-			throw new ChessException("Não ha nenhuma peca na posicao inicial");
+			throw new ChessException("Nao ha nenhuma peca na posicao inicial");
+		}
+		if(board.piece(position).isThereAnyPossibleMove()) {
+			throw new ChessException("Nao ha movimentos possiveis para essa peca");
 		}
 	}
 	
